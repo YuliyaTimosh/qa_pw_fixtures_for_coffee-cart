@@ -5,7 +5,7 @@ test('Assert cart updated correctly after clicking minus for drinks', async ({
   cartPage,
 }) => {
   await menuPage.open();
-  await menuPage.clickCappucinoCup();
+  await menuPage.clickCappuccinoCup();
   await menuPage.clickEspressoCup();
 
   await menuPage.clickCartLink();

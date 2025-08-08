@@ -5,7 +5,7 @@ test('Check Cappuccino removed from Cart after clicking remove button', async ({
   cartPage,
 }) => {
   await menuPage.open();
-  await menuPage.clickCappucinoCup();
+  await menuPage.clickCappuccinoCup();
 
   await menuPage.clickCartLink();
   await cartPage.waitForLoading();

@@ -2,8 +2,8 @@ import { test } from '../_fixtures/fixtures';
 import { totalPriceFormatStr } from '../../src/common/helpers/getPriceForQuantity';
 import { coffePrices } from '../../src/constants';
 
-let price = coffePrices.espresso;
-let formattedPriceWithTotal = totalPriceFormatStr(price, 1);
+const price = coffePrices.espresso;
+const formattedPriceWithTotal = totalPriceFormatStr(price, 1);
 
 test('Check Espresso cost is added to Total on menu page', async ({
   menuPage,

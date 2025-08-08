@@ -1,11 +1,12 @@
 import { test } from '../_fixtures/fixtures';
 
-test('Assert discounted Mocha added to the Cart after promo accepting', async ({
+// eslint-disable-next-line max-len
+test('Assert discounted Mocha is not added to the cart after declining the promo', async ({
   menuPage,
   cartPage,
 }) => {
   await menuPage.open();
-  await menuPage.clickCappucinoCup();
+  await menuPage.clickCappuccinoCup();
   await menuPage.clickEspressoCup();
   await menuPage.clickAmericanoCup();
 

@@ -2,17 +2,19 @@ import { test } from '../_fixtures/fixtures';
 import { priceFormatStr } from '../../src/common/helpers/getPriceForQuantity';
 import { coffePrices } from '../../src/constants';
 
-let formattedEspressoPrice = priceFormatStr(coffePrices.espresso);
-let formattedDiscountedMochaPrice = priceFormatStr(coffePrices.discountedMocha);
-let formattedCappuccinoPrice = priceFormatStr(coffePrices.cappuccino);
-let formattedAmericanoPrice = priceFormatStr(coffePrices.americano);
+const formattedEspressoPrice = priceFormatStr(coffePrices.espresso);
+const formattedDiscountedMochaPrice = priceFormatStr(
+  coffePrices.discountedMocha,
+);
+const formattedCappuccinoPrice = priceFormatStr(coffePrices.cappuccino);
+const formattedAmericanoPrice = priceFormatStr(coffePrices.americano);
 
 test('Assert discounted Mocha added to the Cart after promo accepting', async ({
   menuPage,
   cartPage,
 }) => {
   await menuPage.open();
-  await menuPage.clickCappucinoCup();
+  await menuPage.clickCappuccinoCup();
   await menuPage.clickEspressoCup();
   await menuPage.clickAmericanoCup();
 

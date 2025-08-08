@@ -13,7 +13,7 @@ test('Check Cappuccino correctly added to the Cart', async ({
   cartPage,
 }) => {
   await menuPage.open();
-  await menuPage.clickCappucinoCup();
+  await menuPage.clickCappuccinoCup();
 
   await menuPage.clickCartLink();
   await cartPage.waitForLoading();
